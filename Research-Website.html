@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>CowHerd</title>
+</head>
+<body style="background-color: #E9F7EF">
+    <!-- NavBar -->
+    <nav id="navmenu" class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#home">
+            <img src="./Images/logo/icon.png" width="30" height="30" class="d-inline-block align-top"  loading="lazy">
+            <span>CowHerd</span></br>
+        </a>
+        <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="nav-toggle-icon" class="fas fa-ellipsis-v"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navmenu-links" class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Project Scope
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#project-scope">Literature Survey</a>
+                <a class="dropdown-item" href="#research_gap">Research Gap</a>
+                <a class="dropdown-item" href="#research_problem">Research Problem & Solution</a>
+                <a class="dropdown-item" href="#research_objectives">Research Objectives</a>
+                <a class="dropdown-item" href="#methodology">Methodology</a>
+                <a class="dropdown-item" href="#tech_used">Tools & Technologies</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#milestones">Milestones</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Downloads
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#downloads">Documents</a>
+                  <a class="dropdown-item" href="#presentations">Presentations</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Home -->
+      <section id="home">
+        <div class="container">
+            <div class="hero-cta">
+                <h1>Implementing a Digital Ecosystem <br/>For Cattle Management System</h1>
+                <a class="btn btn-outline-light" type="button" href="#project-scope"><span class="btn-text">Learn More</span><span class="fas fa-chevron-right btn-icon"></span></a>
+            </div>
+        </div>
+        <div class="hero-cover">
+            <img class="spotlight-image" src="./Images/other/skeleton.png"/>
+            <img class="hero-image" src="./Images/other/background.jpg"/>
+        </div>
+      </section>
+      <!-- project-scope -->
+      <section id="project-scope" class="main-sections" style="background-color:#FDFEFE">
+        <div class="container">
+            <h5 class="section-headings">Project Scope</h5>
+            <!-- Literature Survey -->
+            <div id="literature" class="sub-section">
+                <h2>Literature Survey</h2>
+                <div class="row">
+                  <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+                    <div class="section-left">
+                      <div class="section-info-div">
+                        <div class="row">
+                          <div class="col-sm-5"><img src="./Images/lit/4.png" width="90%"/></div>
+                          <div class="col-sm-7 text-col">The current cattle population in Sri Lanka is 839,200. <span style="color: grey; font-size: 12px;">[1]</span style="color: grey; font-size: 12px;"></div>
+                        </div>
+                      </div>
+                      <div class="section-figure " >
+                        <img style="align-items:center; height: 330px;" src="./Images/lit/stat.jpg" width="80%"/>
+                        <p>Figure 1. Annual coconut production 2011 - 2021	[1]</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+					<p>The integration of Image Processing, Machine Learning (ML), and IoT technologies has revolutionized cattle management by enabling automated breed identification, growth monitoring, milk yield prediction, real-time tracking, health assessment, feeding pattern analysis, and disease detection. Traditional methods, reliant on manual inspection and static records, are time-consuming and prone to inaccuracy.</p>
+				   <p><b>(A) Automated Breed Identification</b><br>
+            Breed identification is crucial for managing cattle based on genetic traits and productivity potential. Traditional visual methods are error-prone, while modern approaches using image processing, especially Convolutional Neural Networks (CNNs), enhance classification based on facial and physical features. However, existing solutions often ignore biometric and environmental factors. Our system improves accuracy by integrating image data with biometric and environmental inputs for a more reliable identification process. </p>
+             <p><b>(B) Growth Monitoring and Milk Prediction</b><br>
+            Accurate prediction of growth and milk yield supports better nutrition and breeding strategies. Conventional methods lack predictive capabilities. Machine learning models like Random Forests and regression techniques have been used for forecasting based on historical growth data. Yet, many fail to adapt to real-time parameter changes. Our research addresses this by employing dynamically updating ML models using actual weight, height, and age data for precise forecasting.
+          
+            </div>
+            <p><b>(C) Real-Time Tracking, Health, and Feeding Patterns</b><br>
+            Effective farm management requires real-time cattle tracking and health monitoring. Traditional RFID-based methods are limited. IoT-based wearables with GPS enable real-time location tracking, anomaly detection, and geofencing. Although studies have explored AI-based feeding analysis, systems often operate in isolation. Our unified IoT-based system integrates GPS tracking, health monitoring, and AI-driven feeding analysis for comprehensive cattle oversight.
+          <p><b>(D) Pests and Diseases Identification</b><br>
+            Early detection is key to disease control. Traditional vet inspections often delay diagnosis. Deep learning models (e.g., CNN, YOLO, Faster R-CNN) have been effective in identifying diseases like mastitis and foot-and-mouth via image analysis. AI-based pest detection also helps reduce parasite-related issues. However, current solutions are fragmented. Our approach combines image processing with automated classification to enable early and accurate detection of diseases and pest infestations
+                </div>
+            </div>
+            <!-- Research Gap -->
+            <div id="research_gap" class="sub-section" >
+              <h2>Research Gap</h2>
+              <p>The following research gaps have been identified in recent studies related to cattle management systems:</p>
+              <div class="row mt-5 research-gap">
+			<div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="fa-container text-center">
+                        <i class="fas fa-search fa-3x " aria-hidden="true" style="color: green; "></i>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px;">
+                        <h5>Identification & classification </h5>
+                    </div>
+                    <div>
+                        <p style="text-align: justify;"> There is a lack of smart, integrated solutions for cattle breed and disease identification in Sri Lanka. Many breeds and disease symptoms exhibit similar physical characteristics, making accurate classification difficult through traditional methods. Existing systems often rely solely on image-based techniques without incorporating biometric or environmental data, limiting their effectiveness.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fa-container text-center">
+                        <i class="fas fa-chart-line fa-3x " aria-hidden="true" style="color: green;"></i>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px;">
+                        <h5>Severity assessment</h5>
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">There is a lack of smart, integrated solutions for cattle breed and disease identification in Sri Lanka. Many breeds and disease symptoms exhibit similar physical characteristics, making accurate classification difficult through traditional methods. Existing systems often rely solely on image-based techniques without incorporating biometric or environmental data, limiting their effectiveness.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fa-container text-center">
+                        <i class="fas fa-comments fa-3x " aria-hidden="true" style="color: green;"></i>
+                    </div>
+                    <div class="text-center" style="padding-top: 20px;">
+                        <h5>Information sharing</h5>
+                    </div>
+                    <div>
+                        <p style="text-align: justify;">There is no comprehensive, real-time communication system that connects farmers, veterinarians, and agricultural officers for immediate updates on cattle health, disease outbreaks, and recommended actions. This gap delays response times and reduces the effectiveness of health and nutrition management strategies.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+			</div> 
+              </div>
+          </div>
+            <!-- Research Problem -->
+            <div id="research_problem" class="sub-section">
+              <h2>Research Problem & Solution</h2>
+			   <div class="row">
+                <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+                 <h5><strong>Proposed Problem</strong></h5>
+				 </br>
+					<h4 class="highlight">How can we implement a smart, integrated system for identifying cattle breeds and diseases, monitoring growth, predicting milk yield, and tracking health and movement in real time?</h4>
+					<p></p>
+					<p style="text-align: justify;">Traditional cattle management practices in Sri Lanka rely on manual observation, static records, and isolated systems for breed identification, disease detection, and growth tracking. These approaches are often inaccurate, time-consuming, and ineffective, especially on large-scale farms. Breed classification based on physical appearance is prone to error, and early detection of diseases is frequently delayed due to the lack of automated surveillance systems. Similarly, predicting milk yield without real-time data on cattle growth and health results in poor planning and productivity loss.</p>
+				</br>
+				</div>
+
+				<div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5">
+                  <div class="section-left">
+                    <div class="section-figure">
+                      <iframe width="100%" height="365" src="https://www.youtube.com/embed/BtOEFsaWMTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <p>Product Demonstration - Solution</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			     <div>
+				 <h5><strong>Proposed Solution</strong></h5>
+				 </br>
+				 <p style="text-align: justify;"> Our research proposes a smart cattle management system using image processing, machine learning (ML), and IoT technologies to address the challenges in breed identification, growth monitoring, milk prediction, disease detection, and real-time tracking.
+        The system employs Convolutional Neural Networks (CNNs) to automatically identify cattle breeds based on physical traits captured through images. To enhance accuracy, biometric data (e.g., weight, height, age) and environmental parameters are integrated with image inputs.
+        Growth monitoring and milk yield prediction are powered by ML models such as Random Forests and Linear Regression, which dynamically update based on real-time data collected through IoT devices. This allows accurate forecasting of milk production based on current cattle metrics.
+        For disease detection, deep learning models (e.g., YOLO, Faster R-CNN) are used to analyze images of infected skin, eyes, or hooves. Pest-related infections such as tick infestations are also detected using object detection techniques. The severity of diseases is evaluated based on symptom distribution and infection progression.
+        The IoT module, using wearable GPS and health sensors, provides real-time tracking, anomaly detection, and feeding pattern analysis. Geo-tagged data is collected and stored, enabling health surveillance, movement tracking, and mapping of potential danger zones. Real-time alerts and data visualizations are shared with farmers, veterinarians, and agricultural officers, allowing timely intervention and improved decision-making.
+        This integrated system provides a scalable and intelligent solution to modern cattle management, enhancing productivity, animal welfare, and operational efficiency.	</P>
+                </div>
+          </div>
+            <!-- Research Objectives -->
+		   <div id="research_objectives" class="sub-section">
+        <div class="container">
+          <h2 class="pb-5 pt-5 text-center mb-5 display-5">Research Objectives</h2>
+          <!-- First Content Section-->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
+            </div>
+            <div class="col-6">
+              <h4>1. Automated Classification of Cattle Breeds</h4>
+              <p style="text-align: justify;">The first objective is to develop a solution for accurate classification of cattle breeds using image processing techniques. The system aims to overcome the limitations of manual identification by utilizing Convolutional Neural Networks (CNNs) combined with biometric and environmental data. This enables farmers to correctly identify cattle breeds, which is essential for determining optimal care, feeding, and productivity strategies.</p>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+              <h4>2. Identification and Severity Assessment of Cattle Diseases and Pests</h4>
+              <p style="text-align: justify;">The second objective is to detect common diseases and pest infestations affecting cattle using image-based deep learning techniques such as YOLO and Faster R-CNN. The system also assesses the severity and progression of infections based on visible symptoms and environmental indicators. Early and accurate detection enables timely intervention and helps reduce livestock mortality.</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!-- Third Content Section -->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
+            </div>
+            <div class="col-6">
+              <h4>3. Growth Monitoring and Milk Yield Prediction</h4>
+              <p style="text-align: justify;">
+                The third objective is to monitor cattle growth parameters (weight, height, age) and predict future milk production using machine learning models like Random Forest and Linear Regression. The goal is to dynamically update predictions based on real-time data, improving decision-making regarding nutrition, breeding, and productivity enhancement.
+              </p>
+            </div>
+          </div>
+		   <!-- Path Line -->
+
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+              <h4>4. IoT-Based Tracking and Feeding Pattern Analysis</h4>
+              <p style="text-align: justify;">The fourth objective is to implement IoT-based wearable devices to track real-time cattle movement, monitor health metrics, and analyze feeding patterns. The system uses GPS and motion sensors to detect anomalies such as reduced activity or abnormal feeding behavior, which may indicate underlying health issues. This also enables geofencing and the visualization of high-risk or low-activity zones on farms.</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr/>
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Methodology -->
+            <div id="methodology" class="sub-section">
+              <h2>Methodology</h2>
+              <div class="row">
+                <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+                  <div class="section-left">
+                    <div class="section-figure">
+                      <img src="./Images/other/architecture.png" width="100%"/>
+                      <p>Figure 2. High Level Architecture of the system.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+                  <p><b>(A) Automated Breed Identification and Management System</b><br>
+              This research uses image processing and deep learning (transfer learning with CNNs) to automatically identify cattle breeds from photos. The system is trained with images of local and international breeds collected from farms. It processes images by resizing and normalizing them to improve accuracy. The model recognizes breed-specific features like facial patterns, body shape, and skin texture. It also provides useful information about each breed, such as milk production, origin, and care recommendations. The system adapts to changes in lighting and camera angles, making it practical for real-world use. This helps farmers and researchers make better decisions about cattle breeding and management.</p>
+				  <p><b>(B) Monitoring Cattle Growth and Milk Prediction</b><br>
+          This part focuses on tracking cattle growth and predicting future milk yield using machine learning. Farmers enter data like breed, weight, height, age, and daily milk production via a mobile app. The data is cleaned and prepared for analysis. A Random Forest model predicts growth trends and milk production accurately. Based on these predictions, the system suggests the best diets and feeding schedules to improve health and milk yield. The app also helps farmers monitor their cattle easily and plan better nutrition and breeding programs.</p>
+				  
+          </div>
+          <p><b>(C) Integrated Cattle Tracking, Health, and Feeding Pattern</b><br>
+          IoT devices like GPS collars track cattle movements and detect unusual behavior such as leaving designated areas or missing feeding times. Feeding activities are recorded to monitor nutrition. Machine learning analyzes feeding patterns to recommend optimal diets. The system sends alerts for abnormal activities and shows data on dashboards accessible via web and mobile apps. This helps farmers intervene early and manage their herd more efficiently.</p>
+           <p><b>(D) Pests and Diseases Identification</b><br>
+           Images of cattle diseases such as Black Quarter and skin infections are collected and enhanced through image processing techniques. These images are analyzed by a CNN model trained to identify different diseases based on symptoms visible in the photos. The model provides quick and accurate disease diagnosis, enabling early treatment and preventing the spread of infections. This approach can be expanded to detect other diseases in cattle and other animals, improving overall veterinary care.</p>               
+              </div>
+          </div>
+            <!-- Technologies Used -->
+            <div id="tech_used" class="sub-section">
+              <h2>Tools and Technologies Used</h2>
+              <div class="row technology mt-5">
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/python.png" alt="Python">
+                  </div>
+                  <p>Python</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/flutter.png" alt="Flutter" width="100" height="100">
+                  </div>
+                  <p>Flutter</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/tensorflow.png" alt="Python">
+                  </div>
+                  <p>Tensorflow</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/dart.png" alt="Dart">
+                  </div>
+                  <p>Dart</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/vs.png" alt="vs">
+                  </div>
+                  <p>Visual Studio code</p>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/firebase.png" alt="Firebase">
+                  </div>
+                  <p>Firebase</p>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/googlecloud.png" alt="Google Cloud">
+                  </div>
+                  <p>Google Cloud</p>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/arduino.png" alt="Arduino" style ="width: 116px; height: 79px; margin-left: -8px; margin-top: 9px;">
+                  </div>
+                  <p>Arduino</p>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/android.png" alt="Android" width="150" height="150" style="margin-top: -23px;">
+                  </div>
+                  <p>Android Studio</p>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/colab.png" alt="Google Colab">
+                  </div>
+                  <p>Google Colab</p>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/googlemap.png" alt="Google map API">
+                  </div>
+                  <p>Google map API</p>
+                </div>
+				<div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/tech/GitHub.png" alt="GitHub" width="100" height="86">
+                  </div>
+                  <p>GitHub</p>
+                </div>
+          </div>
+        </div>
+      </section>
+      <!-- Milestones -->
+      <section id="milestones" class="main-sections" >
+        <div class="container">
+            <h5 class="section-headings">Milestones</h5>
+            <div class="sub-section">
+                <h2>Timeline in Brief</h2>
+                <div class="milestones">
+                  <ul class="timeline">
+                    <!-- Project Proposal -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">July 2024</p>
+                        <h3>Project Proposal</h3>
+                        <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
+                        <p><strong>Marks Allocated : </strong>6</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 6%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">6%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Progress Presentation I -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">December 2024</p>
+                        <h3>Progress Presentation I</h3>
+                        <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
+                        <p><strong>Marks Allocated : </strong>6</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 12%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 6%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">6%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Research Paper -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">March 2025</p>
+                        <h3>Research Paper</h3>
+                        <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p>
+                        <p><strong>Marks Allocated : </strong>10</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Progress Presentation II -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">March 2025</p>
+                        <h3>Progress Presentation II</h3>
+                        <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.</p>
+                        <p><strong>Marks Allocated : </strong>18</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 18%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">18%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Website -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">May 2025</p>
+                        <h3>Website Assessment</h3>
+                        <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                        <p><strong>Marks Allocated : </strong>2</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">2%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Logbook -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">June 2025</p>
+                        <h3>Logbook</h3>
+                        <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
+                        <p><strong>Marks Allocated : </strong>3</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 3%" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">3%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Final Report -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">April 2025</p>
+                        <h3>Final Report</h3>
+                        <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
+                        <p><strong>Marks Allocated : </strong>19</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 61%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 19%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">19%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Viva -->
+                    <li class="timeline-event">
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <p class="timeline-event-thumbnail">May 2025</p>
+                        <h3>Final Presentation & Viva</h3>
+                        <p>Viva is held individually to assess each members contribution to the project.</p>
+                        <p><strong>Marks Allocated : </strong>20</p>
+                        <div class="progress">
+                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Downloads -->
+      <section id="downloads" class="main-sections" >
+        <div class="container">
+            <h5 class="section-headings">Downloads</h5>
+            <!-- Documents -->
+            <div class="sub-section">
+                <h2>Documents</h2>
+                <p>Please find all documents related to this project below.</p>
+                <div class="row mt-sm-5 downloads-container">
+				 <!-- Topic Assessment -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Topic Assessment</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2024/07/26</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/file/d/12RJix75nv57oARlaPiMa9tfYW-HHj5iA/view?usp=drive_link" target="_blank">Download</a></li>
+                        <!-- <li class="list-group-item">Individual<a href="">Download</a></li> -->
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Project Charter -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>DataSet</h5>
+                        <p class="card-text pt-sm-2">Created on 2024/11/15</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/drive/folders/1F3qzvjn6UKiAudgACcE5EFxoneKvNX7x?usp=sharing" target="_blank">Download</a></li>
+                        <!-- <li class="list-group-item">Individual<a href="">Download</a></li> -->
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Project Proposal -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Project Proposal</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2024/07/23</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/drive/folders/1qWQ9e5J9O1wD6Af-jAOEDTqdjaXkMq1m?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Status Documents -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Check List I</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2024/12/07</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <!-- <li class="list-group-item">Group<a href="">Download</a></li> -->
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/file/d/1AVwWOELwTopHwE07PSEcTDUqWUBvOVl7/view?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Status Documents -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Check List II</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2025/04/29.</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <!-- <li class="list-group-item">Group<a href="">Download</a></li> -->
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/drive/folders/181_v6cJGEDOaO7l9OWNJGAzanE1tZaJ3?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Research -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Research Paper</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2025/03/07</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/drive/folders/1i0Zp0FyhXpl7UnScMhm0MZiAZLMqq3KK?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Final Report -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Final Report</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2025/04/11</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/file/d/14nh7YcMbCk8lurhtfBhsjxkteZoEQAqQ/view?usp=sharing" target="_blank">Download</a></li>
+                        <li class="list-group-item">Individual<a href="https://drive.google.com/drive/folders/10EmMSjX1P8_kXcZikVflPdEPSrozz25e?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <!-- Poster -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Log Book</h5>
+                        <p class="card-text pt-sm-2">Yet to be submitted, link will be updated soon.</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/drive/folders/15kAnes7zldYNTnMHSk4FzR_orTOd16RM?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Presentations -->
+            <div id="presentations" class="sub-section">
+                <h2>Presentations</h2>
+                <p>Please find all presentations related this project below.</p>
+                <div class="row mt-sm-5 downloads-container">
+                  <!-- Project Proposal -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Project Proposal</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2024/11/26</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/drive/folders/1W5J7D256yFfqitmfc-mny19VcfgueE-F?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Progress Presentation I -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Progress Presentation I</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2024/12/07</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/drive/folders/1cDmFy4fN9Idl77kN1WWuk84v9PjaMzK5?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Progress Presentation II -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Progress Presentation II</h5>
+                        <p class="card-text pt-sm-2">Submitted on 2025/03/19</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/drive/folders/1MTYht9qgKOCRv1-aFXEksLjnojUIN6GS?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Final Presentation -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card" >
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Final Presentation</h5>
+                        <p class="card-text pt-sm-2">Yet to be submitted, link will be updated soon.</p>
+                      </div>
+                      <ul class="download-items list-group list-group-flush">
+                        <li class="list-group-item">Group<a href="https://drive.google.com/drive/folders/1FHmyR9ZlY7WZX4LZvgfbq3nOT1sWIHYH?usp=sharing" target="_blank">Download</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- About Us -->
+      <section id="about" class="main-sections " style="background-color:#FDFEFE">
+        <div class="container">
+            <h5 class="section-headings">About Us</h5>
+            <div class="sub-section about-us-container ">
+                <h2>Meet Our Team !</h2>
+                <div class="row  mt-sm-5 ">
+                  <!-- Supervisor -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/supervisor.jpg" class="about-us-image supervisor" alt="Dr. Janaka Wijekoon" height="10%"/>
+                      <div class="card-body">
+                        <h5 class="card-title">Prof. Pradeep Abeygunawardhana</h5>
+						</br>
+                        <span class="badge badge-secondary">Supervisor</span>
+                        <div class="text-group">
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                          <p><strong>Department</strong></p>
+                          <p>Faculty Of Computing</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a class="card-text mr-4" style="cursor: pointer;" href="#"><i class="fab fa-google mr-2"></i>G-Scholar</a>
+                          <a class="card-text" style="cursor: pointer;" href="#"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Co Supervisor -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/cosupervisors.jpg" class="about-us-image cosupervisor" alt="Ms. Dilani Lunugalage" height="20%"/>
+                      <div class="card-body">
+                        <h5 class="card-title">Dr. Sanvitha Kasthuriarachchi</h5>
+						</br>
+                        <span class="badge badge-secondary">Co-Supervisor</span>
+                        <div class="text-group">
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                          <p><strong>Department</strong></p>
+                          <p>Faculty Of Computing</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a class="card-text mr-4" style="cursor: pointer;" href="#"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="#"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+				  <div class="row  mt-sm-5" style="justify-content: center">
+                  <!-- Sihil -->
+                  <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/sihil.jpg" class="about-us-image " alt="Jayasiri K.B.S.R" height="20%"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Jayasiri K.B.S.R</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Leader</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Information Technology</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="#"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="#"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Geethma -->
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/geethma.png" class="about-us-image" alt="Nimsarani A.B.G" height="20%"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Nimsarani A.B.G</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Member</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Information Technology</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="#"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="#"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Champika -->
+                          <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/champika.jpg" class="about-us-image" alt="Ranaweera C" height="20%" style="height: 315px;"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Ranaweera C</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Member</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Information Technology</p>
+                        </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="#"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="#"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Arqil -->
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="card about-us-card">
+                      <img src="./Images/dp/raraka.jpg" class="about-us-image" alt="Arqil Shiharb M.B." height="20%" style="height: 316px;"/>
+                        <div class="card-body">
+                        <h5 class="card-title">Arqil Shiharb M.B.</h5>
+						</br>
+                        <span class="badge badge-secondary">Group Member</span>
+                        <div class="text-group">
+						<p><strong>Undergraduate</strong></p>
+                          <p>Sri Lanka Institute of Information Technology</p>
+                        </div>
+                        <div class="text-group">
+                        <p><strong>Department</strong></p>
+                          <p>Information Technology
+                      </div>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+						<a class="card-text mr-4" style="cursor: pointer;" href="#"><i class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                          <a class="card-text" style="cursor: pointer;" href="#"><i class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+				  </div>
+            </div>
+        </div>
+      </section>
+
+	   	      <!-- Promo Banner -->
+		  <section id="banner" class="main-sections">
+        <div class="promo-banner">
+            <div class="container">
+
+            	 <div class="section-center">
+                    <div class="section-figure">
+                      <img src="./Images/back/Icon.png" width="10%"/>
+                    </div>
+                  </div>
+            </div>
+                 <h2 class="promo-banner-title">Download Now!</h2>
+                <p class="promo-banner-text">CowHerd mobile application is now available for download on Google Play. Click below to get the app now!</p>
+
+               <div class="section-center">
+                    <div class="section-figure">
+                      <a href="https://play.google.com/store/apps/details?id=com.bruteforce.cocoremedy"><img src="./Images/back/playstore.png" width="15%"/></a>
+                    </div>
+                  </div>
+        </div>
+		</section>
+
+      <!-- Contact Us -->
+      <section id="contact" class="main-sections" style="background-color:#FDFEFE">
+        <div class="container">
+            <h5 class="section-headings">Contact Us</h5>
+            <div class="sub-section">
+                <h2>Get in Touch</h2>
+                <div class="row  mt-sm-5">
+                  <div class="col-md-6 col-sm-12 contact-form">
+                    <form action="MAILTO:researchcoco@gmail.com" method="POST" enctype="text/plain">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message or Query</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                      </div>
+                      <button type="submit" class="btn btncolorgradient	">Submit</button>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-sm-12 contact-details">
+                    <div>
+                      <p><strong>Contact Details</strong></p>
+                      <p>For further queries please reach us at <a href="mailto: cattlemanegment@gmail.com">cattlemanegment@gmail.com</a></p>
+                      <p>Hope this project helped you in some manner. Thank you!</p>
+                      <p>-Team CowHerd	</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Scripts -->
+    <script src="./lib/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="./lib/fontawesome/js/all.min.js"></script>
+    <script src="./lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
